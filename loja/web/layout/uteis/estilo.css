@@ -1,0 +1,171 @@
+body {
+    height:100%;  
+    margin:0;
+    padding:0;
+    background:#cccccc;
+    text-align:center;
+    
+}
+.tudo {
+    min-height:100%;
+    position:relative;
+    background:#fff;
+    width: 760px;
+    margin:0 auto;	
+    padding: 10px;
+    text-align:left;
+
+}
+.topo {
+    background:#474747;
+    padding:30px;
+    color: #cccccc;
+    font-family: fantasy;
+    font-size:30px;
+}
+.conteudo {
+    min-height:100%;
+    padding:10px;
+    padding-bottom:60px;   /* Mesma Altura do Rodapé */
+    font-family: 'Times New Roman',Times,serif;
+}
+.rodape {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;   /* Mesma Altura do Rodapé */
+    background:#474747;
+    width: 760px;
+    color: #cccccc;
+    font-family:fantasy;
+    font-size:15px;
+    text-align: right;
+}
+
+.topo a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*---------------------------------------*/
+/* Menu configuração da barra principal do menu */
+
+#menu {
+    background-color: #cccccc;
+    border: 0 none;
+    clear: both;
+    font-size: 12pt;
+    height: 24px;
+    line-height: normal;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    z-index: 9;
+}
+#menu li {
+    
+    border: 0 none;
+    display: inline;/* itens lado a lado */
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+}
+
+/* Configuração dos Link's não clicados*/
+#menu a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    color: #FFFFFF;
+    display: block;
+    float: none !important;
+    font: bold 12px/14px Verdana,Arial,Helvetica,sans-serif;
+    height: auto !important;
+    padding-bottom: 10px; /*espaço debaixo do link*/
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Configuração dos Link's com o mouse sobreposto*/
+#menu a:hover, #menu li:hover a, #menu li.iehover a {
+    background: none repeat scroll 0 0 #474747;
+}
+
+
+/*configurações especificas e formatação dos primeiros itens do menu*/
+#menu li a {
+    background-color: #cccccc;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: medium none;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: auto;
+    line-height: 24px;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0 9.3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*inicio da secundaria navegação*/
+.secundary-nav li a, .secundary-nav li a:hover {
+    background-color: #474747 !important;
+    border: 0 none !important;
+    line-height: 15px !important;
+    padding: 0 10px 5px !important;
+    text-transform: none !important;
+}
+
+#menu ul li {
+    background-color: #760708;/*configuração da cor de fundo do submenu*/
+    display: block !important; /*configuração do alinhamento do submenu*/
+    float: left;
+    height: 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+#menu li a:hover {
+    background-color: #474747;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: medium none;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 24px;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+#menu ul {
+    background-color: #760708;
+    border: 0 none;
+    display: none;
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 24px;
+    width: auto;
+    z-index: 10;
+}
+
+/*mostra e escode o submenu*/
+#menu li:hover ul, #menu ul li:hover ul, #menu ul ul li:hover ul, #menu li.iehover ul, #menu ul li.iehover ul, #menu ul ul li.iehover ul {
+    display: block;
+}

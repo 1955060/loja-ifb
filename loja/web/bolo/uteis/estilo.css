@@ -1,0 +1,171 @@
+body {
+    height:100%;  
+    margin:0;
+    padding:0;
+    background:#B0E2FF;
+    text-align:center;
+    
+}
+.tudo {
+    min-height:100%;
+    position:relative;
+    background:#fff;
+    width: 760px;
+    margin:0 auto;	
+    padding: 10px;
+    text-align:left;
+
+}
+.topo {
+    background:#1E90FF;
+    padding:30px;
+    color: #B0E2FF;
+    font-family: fantasy;
+    font-size:30px;
+}
+.conteudo {
+    min-height:100%;
+    padding:10px;
+    padding-bottom:60px;   /* Mesma Altura do RodapÃ© */
+    font-family: 'Times New Roman',Times,serif;
+}
+.rodape {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;   /* Mesma Altura do RodapÃ© */
+    background:#1E90FF;
+    width: 760px;
+    color: #B0E2FF;
+    font-family:fantasy;
+    font-size:15px;
+    text-align: right;
+}
+
+.topo a{
+    color: #F8F8FF;
+    text-decoration: none;
+}
+
+/*---------------------------------------*/
+/* Menu configuraÃ§Ã£o da barra principal do menu */
+
+#menu {
+    background-color: #1E90FF;
+    border: 0 none;
+    clear: both;
+    font-size: 12pt;
+    height: 24px;
+    line-height: normal;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    z-index: 9;
+}
+#menu li {
+    
+    border: 0 none;
+    display: inline;/* itens lado a lado */
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+}
+
+/* ConfiguraÃ§Ã£o dos Link's nÃ£o clicados*/
+#menu a {
+    background: none repeat scroll 0 0 #F8F8FF;
+    border: 0 none;
+    color: #F8F8FF;
+    display: block;
+    float: none !important;
+    font: bold 12px/14px Verdana,Arial,Helvetica,sans-serif;
+    height: auto !important;
+    padding-bottom: 10px; /*espaÃ§o debaixo do link*/
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ConfiguraÃ§Ã£o dos Link's com o mouse sobreposto*/
+#menu a:hover, #menu li:hover a, #menu li.iehover a {
+    background: none repeat scroll 0 0 #3A5FCD;
+}
+
+
+/*configuraÃ§Ãµes especificas e formataÃ§Ã£o dos primeiros itens do menu*/
+#menu li a {
+    background-color: #1E90FF;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #1E90FF;
+    border-left: 1px solid #F8F8FF;
+    border-right: medium none;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    color: #F8F8FF;
+    font-weight: bold;
+    height: auto;
+    line-height: 24px;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0 9.3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*inicio da secundaria navegaÃ§Ã£o*/
+.secundary-nav li a, .secundary-nav li a:hover {
+    background-color: #1E90FF !important;
+    border: 0 none !important;
+    line-height: 15px !important;
+    padding: 0 10px 5px !important;
+    text-transform: none !important;
+}
+
+#menu ul li {
+    background-color: #1E90FF;/*configuraÃ§Ã£o da cor de fundo do submenu*/
+    display: block !important; /*configuraÃ§Ã£o do alinhamento do submenu*/
+    float: left;
+    height: 20px;
+    width: 100%;
+    z-index: 10;
+}
+
+#menu li a:hover {
+    background-color: #9370DB;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #1E90FF;
+    border-left: 1px solid #F8F8FF;
+    border-right: medium none;
+    border-style: none none none solid;
+    border-width: medium medium medium 1px;
+    color: #F8F8FF;
+    font-weight: bold;
+    line-height: 24px;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+#menu ul {
+    background-color: #1E90FF;
+    border: 0 none;
+    display: none;
+    left: 0;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 24px;
+    width: auto;
+    z-index: 10;
+}
+
+/*mostra e escode o submenu*/
+#menu li:hover ul, #menu ul li:hover ul, #menu ul ul li:hover ul, #menu li.iehover ul, #menu ul li.iehover ul, #menu ul ul li.iehover ul {
+    display: block;
+}
