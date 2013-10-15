@@ -1,1 +1,5 @@
-<% response.sendRedirect("layout/login.jsp");%>
+<% 
+
+response.sendRedirect("layout/login.jsp");
+
+%>
